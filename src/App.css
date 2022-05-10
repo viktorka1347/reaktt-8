@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-family: 'Times New Roman', serif;
+  font-size: inherit;
+  font-weight: normal;
+  line-height: 1.4;
+  color: black;
+  background-color: transparent;
+}
+
+body {
+  font-size: 18px;
+  background-color: white;
+}
+
+.TaskHeader {
+  font-size: 48px;
+  padding: 0.5em;
+  background-color: darkgray;
+}
+
+.TaskHeader-title {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.ListApp {
+  position: relative;
+}
+
+.ListApp-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2em;
+}
+
+.ListApp-loading {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: black;
+  opacity: 0.5;
+}
+
+.ListApp-loading-text {
+  font-size: 3em;
+  color: white;
+}
+
+.ListApp-error {
+  margin-bottom: 1em;
+  text-align: center;
+  font-size: 2em;
+  color: red;
+}
+
+.List {
+  margin-bottom: 2em;
+  width: 15em;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+  list-style: none;
+}
+
+.List-item {
+  padding: 0.7em 1em;
+  cursor: default;
+}
+
+.List-item:hover {
+  background-color: lightsalmon;
+}
+
+.List-item:not(:last-child) {
+  border-bottom: 1px solid lightgray;
+}
+
+.List-item-selected {
+  background-color: #8080FF;
+}
+
+.Details {
+  margin-left: 2em;
+  box-sizing: content-box;
+  width: 300px;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+}
+
+.Details-name {
+  padding: 0.6em 0.8em 1.2em 0.8em;
+  border-bottom: 1px solid lightgray;
+  font-size: 1.2em;
+}
+
+.Details-item {
+  padding: 0.7em 1em;
+}
+
+.Details-item:not(:last-child) {
+  border-bottom: 1px solid lightgray;
+}
+
+.task-2-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 1em 2em 2em 2em;
+}
+
+.JsonFetch {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 200px;
+  margin: 2em 0 0 2em;
+  border: 1px solid gray;
+}
+
+.JsonFetch-loading {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: black;
+  opacity: 0.5;
+}
+
+.JsonFetch-loading-text {
+  font-size: 2em;
+  color: white;
+}
+
+.JsonFetch-error {
+  font-size: 1.2em;
+  color: #E00000;
+}
